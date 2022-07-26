@@ -51,7 +51,6 @@ export function builtinsResolver(opts: NodePolyfillsOptions) {
   libs.set('repl', EMPTY_PATH);
   libs.set('tls', EMPTY_PATH);
   libs.set('fs', EMPTY_PATH);
-  libs.set('crypto', EMPTY_PATH);
 
   if (opts.fs) {
     libs.set('fs', require.resolve('../polyfills/browserify-fs'));
